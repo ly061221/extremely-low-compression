@@ -1,0 +1,16 @@
+process: 'base_reconstruction'
+train_path: 'G:\dataset\Oxford102\102flowers_GAN\train'
+val_path: 'G:\dataset\Oxford102\102flowers_GAN\test'
+#train_path: 'G:\dataset\imagenette2-320\original-dataset\train'
+#val_path: 'G:\dataset\imagenette2-320\original-dataset\test'
+checkpoint_path: ''
+epochs: 150
+learning_rate: 0.0001
+milestones: [80]
+gamma: 0.5
+num_workers: 2
+lmbda_mse:  0.0018
+batch_size: 8
+test_batch_size: 1
+cuda: True
+

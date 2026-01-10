@@ -1,0 +1,18 @@
+process: 'rec_cls_RB'
+#train_path: 'G:\dataset\imagenette2-320\original-dataset\train'
+#val_path: 'G:\dataset\imagenette2-320\original-dataset\test'
+train_path: 'G:\dataset\Oxford102\102flowers_GAN\train'
+val_path: 'G:\dataset\Oxford102\102flowers_GAN\test'
+checkpoint_base_path: 'weights/based_pretrained.pth'
+checkpoint_cls_path: 'weights/res50_oxford_cls.pth'
+checkpoint_path: ''
+epochs: 150
+learning_rate: 0.0001
+milestones: [80]
+gamma: 0.5
+num_workers: 2
+lmbda_mse:  0.001    # {0.0002, 0.0003, 0.00058, 0.001}
+lmbda_cls: 0.64        # {0.08, 0.15, 0.32, 0.64}
+batch_size: 8
+val_batch_size: 1
+cuda: True

@@ -1,0 +1,6 @@
+process: "eval"
+val_path: 'G:\dataset\Oxford102\102flowers_GAN\test'
+#val_path: 'G:\dataset\imagenette2-320\original-dataset\test'
+checkpoint_path: 'weights/hifiD_final_0.09bpp.pth'
+val_batch_size: 1
+num_workers: 2
